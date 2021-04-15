@@ -1,7 +1,14 @@
+import React from "react";
+
 import './App.css';
 import {BrowserRouter as Router, Switch, Route,} from 'react-router-dom';
+import Loginpagina from './pages/Login.js';
+import Homepage from './pages/Home.js';
+import Profielpagina from './pages/Profiel.js';
+import Registreerpagina from './pages/Registreer.js';
 
 function App() {
+
   return (
       <Router>
         <Switch>
@@ -9,13 +16,13 @@ function App() {
             <Homepage />
            </Route>
            <Route path="/sign-in">
-            <loginpagine />
+            <Loginpagina />
            </Route>
            <Route path="/profile">
-            <profielpagina />
+            <Profielpagina />
            </Route>
            <Route path="/sign-up">
-            <registreerpagina />
+            <Registreerpagina />
            </Route>
         </Switch>
       </Router>
